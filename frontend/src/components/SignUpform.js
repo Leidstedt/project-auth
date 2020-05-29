@@ -19,9 +19,9 @@ export const SignUpform = () => {
   const [error, setError] = useState('')
 
   // not so good :/ 
-  const handleRestart = () => {
+  /*const handleRestart = () => {
     window.location.reload(false);
-  }
+  }*/
 
   const handleSubmit = event => {
     event.preventDefault()
@@ -84,7 +84,7 @@ export const SignUpform = () => {
           >
           </Input>
 
-          <Input type="submit" value="Sign up" onClick={handleRestart}></Input>
+          <Input type="submit" value="Sign up" onClick={handleSubmit}></Input>
           {error &&  alert('Unable to sign up, please try again')}
 
           </From>
