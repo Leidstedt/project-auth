@@ -85,8 +85,8 @@ export const SignUpform = () => {
           </Input>
 
           <Input type="submit" value="Sign up" onClick={handleSubmit}></Input>
-          {error &&  alert('Unable to sign up, please try again')}
-
+          {error &&  alert({error})}
+          
           </From>
      
 
