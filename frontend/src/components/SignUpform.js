@@ -85,7 +85,7 @@ export const SignUpform = () => {
           </Input>
 
           <Input type="submit" value="Sign up" onClick={handleSubmit}></Input>
-          {error && {error}
+          {error && {error}}
           
           </From>
      
