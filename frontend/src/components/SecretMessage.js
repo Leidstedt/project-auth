@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
+import { Image } from '../lib/SecretMessageStyle'
+import { SecretMessageContainer } from '../lib/SecretMessageStyle'
+
+
 
 
 export const SecretMessage = () => {
@@ -37,13 +41,13 @@ export const SecretMessage = () => {
   return (
 
       <section>
-          <div>
-            hej
-           </div>
-
-           <input onClick={handleSignOut} type="submit" value="Sign out"></input>
-    
-    </section>
+          <SecretMessageContainer>
+            <h3>Can you read the secret message?</h3>
+            <Image />
+            <input onClick={handleSignOut} type="submit" value="Sign out"></input>
+           </SecretMessageContainer>
+           
+      </section>
   )
 }
 

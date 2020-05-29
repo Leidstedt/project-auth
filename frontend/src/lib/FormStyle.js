@@ -5,11 +5,15 @@ export const Article = styled.div`
 
     display: flex;
     width: 400px;
+    height: 300px; 
     flexdirection: column;
     flexwrap: wrap;
     border: solid 2px black;
     margin: 10px;
 
+    @media (min-width: 768px) {
+        width: 400px;
+        height: 300px; 
 `
 
 export const From = styled.form`

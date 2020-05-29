@@ -3,13 +3,22 @@ import styled from 'styled-components/macro'
 
 export const Card = styled.div`
 
-    width: 500px;
+    width: 400px;
     height: 400px;
     background-color: white;
     display: flex;
-    flexdirection: row;
-    margin-top: 100px;
+    flex-direction: column;
     padding: 20px;
-    
+    align-items: center;
+    justify-content: center; 
+
+    @media (min-width: 768px) {
+        width: 400px;
+        height: 400px;
+        flex-direction: row;
+        
+
+      
+}
 `
 

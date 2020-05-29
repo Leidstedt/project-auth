@@ -8,7 +8,7 @@ import {  SecretMessage } from './components/SecretMessage'
 
 // lib
 import { Card } from './lib/Card'
-
+import { Wrapper } from './lib/Wrapper'
 
 
 export const App = () => {
@@ -16,18 +16,23 @@ export const App = () => {
     
     <BrowserRouter>
     <Switch>
-    <Card>
-
+    <Wrapper>
     <Route path="/" exact>
-           <SignUpform />
-           <SignInform  /> 
+      <Card>
+          <SignUpform />
+      </Card>
+      <Card>   
+          <SignInform  /> 
+      </Card>
     </Route>
 
     <Route path='/secretmessage'>
+      <Card>
           <SecretMessage />
+       </Card>
     </Route>
-
-    </Card>
+    </Wrapper>
+    
     </Switch>
     </BrowserRouter>
   )
